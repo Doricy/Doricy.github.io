@@ -1,0 +1,199 @@
+
+
+
+:root{
+    --primary:#3a7bfd;
+    --TodoList-Background: #fafafa;
+    --Background: #e4e5f1;
+    --Checked-Color: #d2d3db;
+    --Footer-Color: #9394a5;
+    --TodoItem-Color: #484b64;
+    --HeaderImg:url(/todo-app-main/images/bg-desktop-light.jpg);
+
+}
+.darkmode{
+    --primary:#3a7bfd;
+    --TodoList-Background: #25273c;
+    --Background: #161722;
+    --Checked-Color:#777a92;
+    --Footer-Color: #4d5066;
+    --TodoItem-Color: #e4e5f1;
+    --HeaderImg:url(/todo-app-main/images/bg-desktop-dark.jpg);
+
+}
+
+
+button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+
+button .dark{
+    display: unset;
+}
+
+button.iconchange .dark{
+    display: none;
+}
+
+
+button .light{
+    display: none;
+}
+button.iconchange .light{
+    display: unset;
+}
+
+
+.bg_img{
+    background: var(--HeaderImg);
+    z-index: -1;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+
+}
+body{
+    margin: 0;
+    font: 18px;
+    font-weight: 400;
+    background-color: var(--Background);
+    transition: 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+
+h1{
+    letter-spacing:0.5rem;
+    color: white;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius:0.2rem;
+    background-color:var(--TodoList-Background);
+    color: var(--TodoItem-Color);
+
+}
+
+input:focus{
+    color: var(--TodoItem-Color);
+}
+
+
+
+form{
+    margin-bottom: 1rem;
+}
+.todo{
+    background-color:var(--TodoList-Background);
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius:0.2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    display: flex;
+    justify-content: space-between;
+}
+    
+li{
+    list-style: none;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    background-color: var(--TodoList-Background);
+    color: var(--Footer-Color);
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;   
+}
+
+footer ul li{
+    padding: .2rem;
+   
+}
+
+footer ul li.checked{
+    color: var(--primary);
+   
+}
+
+footer li:hover{
+    color: var(--TodoItem-Color);
+    cursor: pointer;
+}
+
+footer p{
+    color: var(--Footer-Color);
+}
+
+footer p:hover{
+    color: var(--TodoItem-Color);
+    cursor: pointer;
+}
+
+.todo_list{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.219);
+}
+
+.todo_item{
+    color: var(--TodoItem-Color)
+}
+
+.todo_item.checked{
+text-decoration: line-through;
+color:var(--Checked-Color) ;
+}
+
+section{
+    display: flex;
+}
+
+
+.checkedbox{
+    border: 1px solid var(--Footer-Color);
+    border-radius: 50%;
+    width: 1.4rem;
+    padding-left: .3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+}
+
+.checkedbox:hover{
+    border:1px solid var(--primary);
+}
+
+.checkedbox.checked{
+    background-image:linear-gradient(to right,rgb(87, 221, 255), rgb(192, 88, 243));
+    
+}
+
