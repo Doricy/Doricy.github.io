@@ -18,7 +18,7 @@
 <div class = "bg_img">
 
 </div>
-
+<!--todo list container-->
 <div class = "container">
   <div class = "header">
     <h1>TODO</h1>
@@ -29,93 +29,31 @@
     
 
   </div>
-<form action="">
-  <input class= "f_page" type="text" placeholder="Create a new todo...">
+<form id= "n-form" action="">
+  <input required="true" id = "n-input" class= "input" type="text" placeholder="Create a new todo...">
 </form>
 
 <ul class="todo_list">
-  <div class="todo">
-    <section>
-      <div class="checkedbox checked">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-      </div>
-      <li class="todo_item checked">
-        Baking 
-      </li>
-    </section>
 
-    <div class="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-    </div>
-      
-  </div>
-
-  <div class="todo">
-    <section>
-      <div class="checkedbox checked">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-      </div>
-      <li class="todo_item checked">
-        Car Wash 
-      </li>
-    </section>
-
-    <div class="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-    </div>
-      
-  </div>
-
-  <div class="todo">
-    <section>
-      <div class="checkedbox checked ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-      </div>
-      <li class="todo_item ">
-        Read
-      </li>
-    </section>
-
-    <div class="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-    </div>
-      
-  </div>
-
-  <div class="todo">
-    <section>
-      <div class="checkedbox checked">
-        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-      </div>
-      <li class="todo_item checked">
-        Paint
-      </li>
-    </section>
-
-    <div class="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-    </div>
-      
-  </div>
-
-
+<!--Todos appear here-->
+  
+</ul>
 
 
 <footer>
-  <p>5 items left</p>
-  <ul>
+  <p class="counter">0 items left</p>
+  <ul class="filterContainer">
     <li class="checked">All</li>
     <li>Active</li>
     <li>Completed</li>
   </ul>
-  <p>Clear Completed</p>
+  <p class="clrBtn">Clear Completed</p>
   </footer>
-</ul>
 
 </div>
 
 
-
+<br>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
