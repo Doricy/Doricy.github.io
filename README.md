@@ -12,7 +12,7 @@ This is a simple Todo app built using JavaScript. It allows users to create, vie
 
 1. Drag and Drop: Users can drag and drop todos according to their preference
 
-Usage
+## Usage
 1. To use the JavaScript Todo App, follow these steps:
 
 1. Clone the repository to your local machine or download the source code as a ZIP file.
@@ -29,7 +29,7 @@ Usage
 
 1. Enjoy organizing your tasks with the JavaScript Todo App!
 
-Technologies Used
+## Technologies Used
 The following technologies were used to develop the JavaScript Todo App:
 
 HTML: Provides the structure and layout of the web page.
@@ -38,5 +38,5 @@ JavaScript: Implements the interactive functionality and logic of the todo app.
 Credits
 The JavaScript Todo App was created by Doris Addai Gyebi. It is an open-source project, and contributions are welcome. Feel free to fork the repository, make improvements, and submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License. Feel free to modify and distribute the code as needed.
