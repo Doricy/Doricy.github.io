@@ -177,6 +177,12 @@ function darkmodechanger(){
     document.documentElement.classList.toggle("darkmode");
     toggler.classList.toggle("iconchange");
 
+    if(toggler.classList.contains("iconchange")){
+        localStorage.setItem("mode","dark");
+    }else{
+        localStorage.setItem("mode","light");
+    }
+
 }
 
 //function to save todos to localstorage
@@ -196,8 +202,13 @@ function getLocalTodos() {
 
     //display mode based on time
     var today = new Date;
+    
     if (today.getHours() >= 18){
         darkmodechanger();
+    }else{
+        if(localStorage.getItem("mode")==="dark"){
+            darkmodechanger()
+        }
     }
 
     let todos;
