@@ -8,7 +8,7 @@
     --Checked-Color: #d2d3db;
     --Footer-Color: #9394a5;
     --TodoItem-Color: #484b64;
-    --HeaderImg:url("./images/bg-desktop-light.jpg");
+    --HeaderImg:url("./todo-app-main/images/bg-desktop-light.jpg");
 
 }
 .darkmode{
@@ -18,7 +18,7 @@
     --Checked-Color:#777a92;
     --Footer-Color: #4d5066;
     --TodoItem-Color: #e4e5f1;
-    --HeaderImg:url("./images/bg-desktop-dark.jpg");
+    --HeaderImg:url("./todo-app-main/images/bg-desktop-dark.jpg");
 
 }
 
