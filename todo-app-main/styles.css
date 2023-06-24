@@ -8,7 +8,7 @@
     --Checked-Color: #d2d3db;
     --Footer-Color: #9394a5;
     --TodoItem-Color: #484b64;
-    --HeaderImg:url("./images/bg-desktop-light.jpg");
+    --HeaderImg:url(/images/bg-desktop-light.jpg);
 
 }
 .darkmode{
@@ -18,7 +18,7 @@
     --Checked-Color:#777a92;
     --Footer-Color: #4d5066;
     --TodoItem-Color: #e4e5f1;
-    --HeaderImg:url("./images/bg-desktop-dark.jpg");
+    --HeaderImg:url(/images/bg-desktop-dark.jpg);
 
 }
 
@@ -110,6 +110,8 @@ form{
 }
 .todo{
     background-color:var(--TodoList-Background);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.219);
+
     width: 100%;
     padding: 1rem;
     outline: none;
@@ -132,7 +134,7 @@ footer{
     background-color: var(--TodoList-Background);
     color: var(--Footer-Color);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.219);
-
+    width: 100%;
 }
 
 footer ul{
@@ -165,10 +167,8 @@ footer p:hover{
 }
 
 .todo_list{
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.219);
+    max-height:10rem;
     overflow: auto;
-    height:20 rem;
-    
 }
 
 .todo_item{
@@ -229,6 +229,31 @@ section{
 
 @media only screen and (max-width:350px){
     .container{
-        padding: 0 1rem;
+        padding: 0 10px;
+    }
+
+    footer{
+        font-size: 12px;
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: var(--TodoList-Background);
+    border-top-right-radius: 2rem;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--Footer-Color);
+    border-top-right-radius: 2rem;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
