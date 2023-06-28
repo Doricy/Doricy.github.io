@@ -56,6 +56,15 @@ function createTodo(e){
     todoDiv.setAttribute("draggable",true)
     todoDiv.addEventListener("dragstart",()=>{todoDiv.classList.add("dragging")})
     todoDiv.addEventListener("dragend",dragEnd)
+
+    todoDiv.addEventListener("mouseenter",()=>{
+        closeButton.style.display = "block"
+        closeButton.style.opacity = "1"
+    })
+    todoDiv.addEventListener("mouseleave",()=>{
+        closeButton.style.display = "none"
+        closeButton.style.opacity = "0"
+    })
     //adds new items to the todo_list
     todo_list.prepend(todoDiv);
 
@@ -255,6 +264,14 @@ function getLocalTodos() {
         todoDiv.setAttribute("draggable",true)
         todoDiv.addEventListener("dragstart",()=>{todoDiv.classList.add("dragging")})
         todoDiv.addEventListener("dragend",dragEnd)
+        todoDiv.addEventListener("mouseenter",()=>{
+            closeButton.style.display = "block"
+            closeButton.style.opacity = "1"
+        })
+        todoDiv.addEventListener("mouseleave",()=>{
+            closeButton.style.display = "none"
+            closeButton.style.opacity = "0"
+        })
 
         todo_list.append(todoDiv);
         remainingTodo();
